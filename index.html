@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>shreyas :: terminalfolio</title>
+    <meta name="description" content="Terminal-style personal portfolio" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner" aria-label="System header">
+      <div class="container">
+        <div class="brand">// system: shreyas-terminal v2.0 · all systems nominal</div>
+      </div>
+    </header>
+
+    <main id="main" class="container" role="main">
+       Terminal Hero 
+      <section class="terminal" aria-label="Terminal interface">
+        <div class="terminal__header">
+          <span class="dot dot--red" aria-hidden="true"></span>
+          <span class="dot dot--yellow" aria-hidden="true"></span>
+          <span class="dot dot--green" aria-hidden="true"></span>
+          <div class="terminal__title" aria-hidden="true">shreyas@localhost:~</div>
+        </div>
+
+        <div class="terminal__body">
+          <div class="prompt small muted">shreyas@localhost:~$</div>
+          <h1 class="welcome">
+            cat 'welcome.txt'
+          </h1>
+          <p class="intro">
+            // Hello! I’m Shreyas — building things for the web. Use a command below to explore.
+          </p>
+
+           Command chips 
+          <div class="chips" aria-label="Command shortcuts">
+            <button class="chip" data-cmd="about_me" aria-label="Run command about_me">$ about_me</button>
+            <button class="chip" data-cmd="projects" aria-label="Run command projects">$ projects</button>
+            <button class="chip" data-cmd="contact" aria-label="Run command contact">$ contact</button>
+            <button class="chip" data-cmd="socials" aria-label="Run command socials">$ socials</button>
+          </div>
+
+           Command line 
+          <div class="cmdline">
+            <span class="caret">&gt;</span>
+            <input
+              id="cmd-input"
+              class="cmdline__input"
+              type="text"
+              spellcheck="false"
+              aria-label="Command input"
+              placeholder="type a command (about_me | projects | contact | socials) and press Enter"
+            />
+            <button id="run-btn" class="btn" aria-label="Run command">Run</button>
+          </div>
+
+           SQL output 
+          <div class="sqlout" aria-live="polite" aria-atomic="true">
+            <div class="sqlout__label">// sql query</div>
+            <pre class="sqlout__pre"><code id="sql-output"></code><span id="sql-cursor" class="cursor" aria-hidden="true">_</span></pre>
+            <div id="sql-hint" class="sqlout__hint">// example: select about_me from shreyas;</div>
+          </div>
+        </div>
+      </section>
+
+       Dynamic content target 
+      <section id="content" class="content" aria-live="polite" aria-busy="false">
+         Content for the selected command will be injected here 
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container small muted">
+        // © <span id="year"></span> shreyas · terminalfolio
+      </div>
+    </footer>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>

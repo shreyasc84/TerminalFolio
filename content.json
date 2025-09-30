@@ -1,0 +1,40 @@
+{
+  "about_me": {
+    "bio": "I’m Shreyas, an Information Science & Engineering student with hands-on experience in Python programming and a strong enthusiasm for blockchain technology. I’m passionate about building blockchain-based products and exploring decentralized applications. Alongside this, I have a solid understanding of web development and enjoy turning ideas into functional, user-friendly solutions. Always curious, always building.",
+    "skills": [
+      "Python · Django · Flask",
+      " MySQL · APIs ·  Git & GitHub",
+      " Bootstrap · Tailwind · UI Engineering",
+      " Web Development · Agile fundamentals · Performance"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Terminalfolio",
+      "description": "A terminal-inspired portfolio template with typing effects and command navigation.",
+      "live": "https://example.com/terminalfolio",
+      "repo": "https://github.com/example/terminalfolio"
+    },
+    {
+      "title": "Realtime Chat",
+      "description": "Lightweight chat UI using serverless APIs and optimistic updates.",
+      "live": "https://example.com/chat",
+      "repo": "https://github.com/example/chat"
+    },
+    {
+      "title": "Charts Dashboard",
+      "description": "Responsive dashboards with accessible charts built on Recharts.",
+      "live": "https://example.com/charts",
+      "repo": "https://github.com/example/charts"
+    }
+  ],
+  "contact": {
+    "email": "0x.shreyas.dev@gmail.com",
+    "phone": ""
+  },
+  "socials": [
+    { "label": "github -> @shreyasc84", "href": "https://github.com/shreyasc84" },
+    { "label": "linkedin -> Shreyas C", "href": "https://www.linkedin.com/in/shreyasc84" },
+    { "label": "x -> Shreyas", "href": "https://x.com/maxbrainrotting" }
+  ]
+}
