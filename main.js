@@ -13,7 +13,7 @@
   let typingTimer = null
 
   // Fetch content once
-  fetch("./content.json")
+  fetch("content.json")
     .then((r) => r.json())
     .then((json) => {
       data = json
